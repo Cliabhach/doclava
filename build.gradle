@@ -9,8 +9,8 @@ group = 'com.cliabhach'
 archivesBaseName = 'doclava'
 version = '1.0.7'
 
-sourceCompatibility = '1.6'
-targetCompatibility = '1.6'
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
 
 tasks.withType(JavaCompile) {
 	options.encoding = 'UTF-8'
@@ -23,7 +23,6 @@ repositories {
 
 dependencies {
 	compile files(System.env["JAVA_HOME"] + "/lib/tools.jar")
-	compile 'com.google.guava:guava:18.0'
 	compile 'com.google.jsilver:jsilver:1.0.0'
 }
 
