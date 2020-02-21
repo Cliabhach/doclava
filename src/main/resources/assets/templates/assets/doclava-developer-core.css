@@ -21,6 +21,9 @@
   --theme-color-c: #7FA9B5;
   --theme-color-d: #7BB026;
   --theme-color-e: #BCCDF0;
+
+  --docs-color-d: #dee8f1;
+  --theme-color-f: #435A6E;
 }
 
 /* Scrollbar default style */
@@ -213,7 +216,7 @@ td,th {
 }
 
 th {
-  background-color:#dee8f1;
+  background-color:var(--docs-color-d);
 }
 
 td > p:last-child {
@@ -398,7 +401,7 @@ blockquote {
 
 #mainBodyFixed h1,
 #mainBodyFluid h1 {
-  color:#435A6E;
+  color:var(--theme-color-f);
   font-size:1.7em;
   margin: 1em 0;
 }
