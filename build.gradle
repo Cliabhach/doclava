@@ -5,9 +5,9 @@ ext {
 	LocalArtifactDir = "D:/Lib/doclava"
 }
 
-group = 'org.knight.doclava'
+group = 'com.cliabhach'
 archivesBaseName = 'doclava'
-version = '1.0.6'
+version = '1.0.7'
 
 sourceCompatibility = '1.6'
 targetCompatibility = '1.6'
