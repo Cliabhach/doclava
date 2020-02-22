@@ -22,19 +22,22 @@
   --other-color-b: #d3ecf5;
   --other-color-c: #ffcf00;
   
-  --grey-color-g: #E2E2E2;
-  --grey-color-h: #777;
-  --grey-color-i: #999;
-  --grey-color-j: #444;
-  --grey-color-k: #f6f6f6;
-  --grey-color-l: #d6d6d6;
-  --grey-color-m: #888;
-  --grey-color-n: #d9d9d9;
-  --grey-color-o: #ededed;
-  --grey-color-p: #bbb;
-  --grey-color-q: #eaeaea;
-  --grey-color-r: #111;
-  --grey-color-s: #222;
+  --greyscale-color-a: #111;
+  --greyscale-color-b: #222;
+  --greyscale-color-d: #444;
+  --greyscale-color-g: #777;
+  --greyscale-color-h: #888;
+  --greyscale-color-i: #999;
+  --greyscale-color-k: #bbb;
+  
+  --grey-light-color-a: #d6d6d6;
+  --grey-light-color-b: #d9d9d9;
+  --grey-light-color-c: #ededed;
+  
+  --small-heading-background: #E2E2E2;
+  
+  --absent-nav-entry-background: #eaeaea;
+  --absent-nav-title-background: #f6f6f6;
 }
 
 a {
@@ -65,12 +68,12 @@ a:visited {
 }
 
 #title {
-  border-bottom: 4px solid var(--grey-color-d);
+  border-bottom: 4px solid var(--greyscale-color-l);
   display:none;
 }
 
 #title h1 {
-  color:var(--theme-color-b);
+  color:var(--theme-color-title);
   margin:0;
   padding: 5px 10px;
   font-size: 1em;
@@ -78,7 +81,7 @@ a:visited {
 }
 
 #title h1 .small{
-  color:var(--extreme-color-b);
+  color:var(--greyscale-color-min);
   margin:0;
   font-size: 13px;
   padding:0 0 0 15px;
@@ -88,7 +91,7 @@ a:visited {
 
 #side-nav {
   padding:0 6px 0 0;
-  background-color: var(--extreme-color-w);
+  background-color: var(--greyscale-color-max);
   font-size:16px;
 }
 
@@ -219,8 +222,8 @@ a:visited {
 }
 
 #index-links .selected {
-  background-color: var(--extreme-color-w);
-  color: var(--extreme-color-b);
+  background-color: var(--greyscale-color-max);
+  color: var(--greyscale-color-min);
   font-weight:normal;
   text-decoration:none;
 }
@@ -262,7 +265,7 @@ a:visited {
 }
 
 #nav-tree a.nolink {
-  color: var(--extreme-color-b);
+  color: var(--greyscale-color-min);
   text-decoration: none;
 }
 
@@ -297,7 +300,7 @@ a:visited {
 }
 
 #jd-header {
-  background-color: var(--grey-color-g);
+  background-color: var(--small-heading-background);
   padding: 7px 15px;
 }
 
@@ -309,13 +312,13 @@ a:visited {
 #jd-header .crumb {
   font-size:.9em;
   line-height:1em;
-  color:var(--grey-color-h);
+  color:var(--greyscale-color-g);
 }
 
 #jd-header .crumb a,
 #jd-header .crumb a:visited {
   text-decoration:none;
-  color:var(--grey-color-h);
+  color:var(--greyscale-color-g);
 }
 
 #jd-header .crumb a:hover {
@@ -334,7 +337,7 @@ a:visited {
 }
 
 #jd-header.guide-header {
-  background-color:var(--extreme-color-w);
+  background-color:var(--greyscale-color-max);
   color:var(--docs-color-e);
   height:50px;
 }
@@ -417,7 +420,7 @@ links to summary tables) */
   font-weight:normal;
   float:right;
   text-align:right;
-  color:var(--grey-color-i);
+  color:var(--greyscale-color-i);
   max-width:70%;
 }
 
@@ -428,13 +431,13 @@ links to summary tables) */
 }
 
 #api-level-toggle label.disabled {
-  color:var(--grey-color-i);
+  color:var(--greyscale-color-i);
 }
 
 div.api-level {
   font-size:.8em;
   font-weight:normal;
-  color:var(--grey-color-i);
+  color:var(--greyscale-color-i);
   float:right;
   padding:0 7px 0;
   margin-top:-25px;
@@ -444,20 +447,20 @@ div.api-level {
   font-size:1.3em;
   font-weight:bold;
   float:none;
-  color:var(--grey-color-j);
+  color:var(--greyscale-color-d);
   padding:0;
   margin:0;
 }
 
 /* Force link colors for IE6 */
 div.api-level a {
-  color:var(--grey-color-i);
+  color:var(--greyscale-color-i);
 }
 #api-info-block div.api-level a:link {
-  color:var(--grey-color-j);
+  color:var(--greyscale-color-d);
 }
 #api-level-toggle a {
-  color:var(--grey-color-i);
+  color:var(--greyscale-color-i);
 }
 
 div#naMessage {
@@ -472,7 +475,7 @@ div#naMessage div {
   position:fixed;
   margin:50px 0;
   padding:4em 4em 3em;
-  background:var(--extreme-color-w);
+  background:var(--greyscale-color-max);
   background:rgba(255,255,255,0.7);
   border:1px solid var(--docs-color-b);
 }
@@ -488,7 +491,7 @@ div#naMessage strong {
 .absent a:visited,
 .absent a:hover,
 .absent * {
-  color:var(--grey-color-p) !important;
+  color:var(--greyscale-color-k) !important;
   cursor:default !important;
   text-decoration:none !important;
 }
@@ -510,7 +513,7 @@ div#naMessage strong {
 #side-nav li.absent.selected *,
 #side-nav div.label.absent.selected,
 #side-nav div.label.absent.selected * {
-  background-color:var(--grey-color-q) !important;
+  background-color:var(--absent-nav-entry-background) !important;
 }
 /* IE6 quirk (won't chain classes, so just keep background blue) */
 * html #side-nav li.selected,
@@ -523,7 +526,7 @@ div#naMessage strong {
 
 .absent h4.jd-details-title,
 .absent h4.jd-details-title * {
-  background-color:var(--grey-color-k) !important;
+  background-color:var(--absent-nav-title-background) !important;
 }
 
 .absent img {
@@ -573,8 +576,8 @@ div#naMessage strong {
 }
 
 hr {
-  background-color:var(--grey-color-d);
-  border-color:var(--extreme-color-w);
+  background-color:var(--greyscale-color-l);
+  border-color:var(--greyscale-color-max);
   margin:2em 0 1em;
 }
 
@@ -583,21 +586,21 @@ hr {
 #jd-content h1 {
 /*sdk page*/
   font-size:1.6em;
-  color:var(--theme-color-b);
+  color:var(--theme-color-title);
   margin:0 0 .5em;
 }
 
 #jd-content h2 {
   font-size:1.45em;
-  color:var(--grey-color-r);
-  border-top:2px solid var(--grey-color-d);
+  color:var(--greyscale-color-a);
+  border-top:2px solid var(--greyscale-color-l);
   padding: .5em 0 0;
   margin: 2em 0 1em 0;
 }
 
 #jd-content h3 {
   font-size:1.2em;
-  color:var(--grey-color-s);
+  color:var(--greyscale-color-b);
   padding: .75em 0 .65em 0;
   margin:0;
 }
@@ -605,12 +608,12 @@ hr {
 #jd-content h4 {
   font-size:1.1em;
   margin-bottom:.5em;
-  color:var(--grey-color-s);
+  color:var(--greyscale-color-b);
 }
 
 #jd-content .small-header {
   font-size:1em;
-  color:var(--extreme-color-b);
+  color:var(--greyscale-color-min);
   font-weight:bold;
   border:none;
   padding:0;
@@ -657,7 +660,7 @@ dl.tag-list dl.atn-list {
 }
 
 .jd-details {
-/*  border:1px solid var(--ex-color-d);
+/*  border:1px solid var(--special-text-tint);
   padding:4px; */
   margin:0 0 1em;
 }
@@ -715,7 +718,7 @@ the details section for constants,
 attrs, methods, etc. */
 h4.jd-details-title {
   font-size:1.15em;
-  background-color: var(--grey-color-g);
+  background-color: var(--small-heading-background);
   margin:1.5em 0 .6em;
   padding:3px 95px 3px 3px; /* room for api-level */
 }
@@ -738,7 +741,7 @@ h5.jd-tagtitle {
 .jd-tagtable td,
 .jd-tagtable th {
   border:none;
-  background-color:var(--extreme-color-w);
+  background-color:var(--greyscale-color-max);
   vertical-align:top;
   font-weight:normal;
   padding:2px 10px;
@@ -749,7 +752,7 @@ h5.jd-tagtitle {
 }
 
 #jd-content table h2 {
-  background-color: var(--grey-color-l);
+  background-color: var(--grey-light-color-a);
   font-size: 1.1em;
   margin:0 0 10px;
   padding:5px;
@@ -798,7 +801,7 @@ div.special ol li {
 
 #jd-content div.special h2,
 #jd-content div.special h3 {
-  color:var(--ex-color-d);
+  color:var(--special-text-tint);
   font-size:1.2em;
   border:none;
   margin:0 0 .5em;
@@ -890,7 +893,7 @@ div.figure {
   clear:right;
   margin:1em 0 0 3em;
   padding:0;
-  background-color:var(--extreme-color-w);
+  background-color:var(--greyscale-color-max);
   /* width must be defined w/ an inline style matching the image width */
 }
 
@@ -913,13 +916,13 @@ p.table-caption {
   float:right;
   clear:right;
   width:310px; /* +35px padding */
-  background-color:var(--extreme-color-w);
+  background-color:var(--greyscale-color-max);
   margin:0;
   padding:0 0 20px 35px;
 }
 
 .sidebox {
-  border-left:1px solid var(--docs-color-d);
+  border-left:1px solid var(--table-heading-background);
   background-color:var(--docs-color-k);
   margin:0;
   padding:8px 12px;
@@ -957,7 +960,7 @@ padding:0 0 0 0em;
 }
 
 .sidebox hr {
-  background-color:var(--grey-color-d);
+  background-color:var(--greyscale-color-l);
   border:none;
 }
 
@@ -1006,7 +1009,7 @@ table ol.toc {
 /* link table */
 .jd-linktable {
   margin: 0 0 1em;
-  border-bottom: 1px solid var(--grey-color-m);
+  border-bottom: 1px solid var(--greyscale-color-h);
 }
 .jd-linktable th,
 .jd-linktable td {
@@ -1016,10 +1019,10 @@ table ol.toc {
   border:none;
 }
 .jd-linktable tr {
-  background-color: var(--extreme-color-w);
+  background-color: var(--greyscale-color-max);
 }
 .jd-linktable td {
-  border-top: 1px solid var(--grey-color-m);
+  border-top: 1px solid var(--greyscale-color-h);
   background-color: inherit;
 }
 .jd-linktable td  p {
@@ -1045,7 +1048,7 @@ table ol.toc {
 }
 
 tr.alt-color {
-  background-color: var(--grey-color-k);
+  background-color: var(--absent-nav-title-background);
 }
 
 /* expando trigger */
@@ -1060,22 +1063,22 @@ tr.alt-color {
 
 /* SDK PAGE */
 table.download tr {
-  background-color:var(--grey-color-n);
+  background-color:var(--grey-light-color-b);
 }
 
 table.download tr.alt-color {
-  background-color:var(--grey-color-o);
+  background-color:var(--grey-light-color-c);
 }
 
 table.download td,
 table.download th {
-  border:2px solid var(--extreme-color-w);
+  border:2px solid var(--greyscale-color-max);
   padding:10px 5px;
 }
 
 table.download th {
   background-color:var(--docs-color-h);
-  color:var(--extreme-color-w);
+  color:var(--greyscale-color-max);
 }
 
 /* INLAY 180 COPY and 240PX EXTENSION */
@@ -1204,7 +1207,7 @@ body .ui-resizable-autohide .ui-resizable-handle { display: none; }
   }
 
   h4.jd-details-title {
-    border-bottom:1px solid var(--grey-color-c);
+    border-bottom:1px solid var(--greyscale-color-f);
   }
 
   pre {
